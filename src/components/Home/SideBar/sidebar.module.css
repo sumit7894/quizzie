@@ -1,0 +1,29 @@
+.sidebar__container
+{
+    height: 100vh;
+    width: 15vw;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sidebar__logo
+{
+    font-family: 'Jomhuria';
+    font-weight: 540;
+    color: #474444;
+    margin-top: 1.5rem;
+    font-size: 6rem;
+}
+.sidebar__buttons
+{
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    height: 30vh;
+    justify-content: space-between;
+}
+.sidebar__footer
+{
+    height: 10vh;
+}
