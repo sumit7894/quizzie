@@ -2,28 +2,80 @@
 {
     height: 100vh;
     width: 15vw;
+    min-width: 100px;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 .sidebar__logo
 {
+    padding: 10px;
     font-family: 'Jomhuria';
     font-weight: 540;
     color: #474444;
-    margin-top: 1.5rem;
-    font-size: 6rem;
+    font-size: 5rem;
 }
 .sidebar__buttons
 {
     display: flex;
     flex-direction: column;
-    background-color: green;
     height: 30vh;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 90%;
+}
+.sidebar__buttons>button
+{
+    border:  none;
+    width: 100%;
+    height: 2.5rem;
+    font-family: 'Poppins';
+    font-weight: 520;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 8px;
 }
 .sidebar__footer
 {
-    height: 10vh;
+    margin-bottom: 2rem;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar__footer__line
+{
+    width: 70%;
+    color:black;
+    border-color: black;
+    background-color: #000000;
+}
+.active__sidebar__button
+{
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.15);
+}
+.sidebar__footer>button
+{
+    height: 5vh;
+    background-color: white;
+    border: none;
+    width: 80%;
+    font-size: 1.4rem;
+    font-weight: 550;
+}
+
+@media only screen and (max-width: 980px) {
+    .sidebar__logo{
+        font-size: 3rem;
+    }
+    .sidebar__buttons button{
+        font-size: 90%;
+    }
+    .sidebar__footer button{
+        font-size: 1rem;
+    }
 }

@@ -3,11 +3,14 @@ const {createContext, useState} = require('react')
 const QuizContext = createContext();
 
 const Provider = ({children})=>{
-    const [loggedIn,setLoggedIn] = useState();
-
+    const [isAuthenticated,setIsAuthenticated] = useState();
+    const [selectedMenu,setSelectedMenu] = useState(1);
 const value = 
 {
-loggedIn
+selectedMenu,
+setSelectedMenu,
+isAuthenticated,
+setIsAuthenticated
 }
 return (<QuizContext.Provider value={value}>{children}</QuizContext.Provider>)
 };

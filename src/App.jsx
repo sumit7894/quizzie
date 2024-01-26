@@ -4,6 +4,7 @@ import AuthPage from './Pages/AuthPage';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { Provider } from './context/QuizContext';
 import HomePage from './Pages/HomePage';
+
 function App() {
   const appRouter = createBrowserRouter([
     {
@@ -11,7 +12,7 @@ function App() {
       element:<AuthPage/>
     },
     {
-      path:'dashboard',
+      path:'/dashboard',
       element:<HomePage/>
     }
   ])
