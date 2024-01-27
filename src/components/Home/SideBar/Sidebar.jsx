@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './sidebar.module.css'
 import useQuizContext from '../../../hooks/useQuizContext';
 const Sidebar = () => {
-  const {selectedMenu,setSelectedMenu} = useQuizContext();
+  const {selectedMenu,setSelectedMenu,setShowCreateQuiz} = useQuizContext();
   return (
     <div className={styles.sidebar__container}>
         <div className={styles.sidebar__logo}>QUIZZIE</div>
@@ -19,7 +19,7 @@ const Sidebar = () => {
              Analytics
             </button>
             <button
-            onClick={()=>setSelectedMenu(3)}
+            onClick={()=>setShowCreateQuiz(true)}
             >
               Create Quiz
             </button>
